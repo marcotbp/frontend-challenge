@@ -1,4 +1,11 @@
 ### Code ###
+
+# Node
+node_modules/
+
+# MacOS
+.DS_Store
+
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
