@@ -1,0 +1,20 @@
+.repo-details {
+    padding: 40px;
+}
+
+.repo-details .repo-details__list {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.repo-details .repo-details__list .repo-details__list-item {    
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;    
+    color: #555;
+} 
+
+.repo-details .repo-details__list .repo-details__list-item .repo-details__list-item--property {
+    width: 120px;    
+}

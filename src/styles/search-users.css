@@ -1,0 +1,70 @@
+.search-users h1 {
+    padding: 40px;
+}
+.search-users .search-input {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-users .search-input.search-input--loading {
+    background: white url("../images/loading.gif") right center no-repeat;
+}
+
+.search-result {
+    padding: 0 80px 40px 80px;
+    box-sizing: border-box;
+}
+
+.search-result .search-result__count {    
+    font-size: 15px;
+    box-sizing: border-box;
+    text-align: right;
+    display: block;
+}
+
+.search-result .search-result__list {
+    width: 100%;
+    display: table;
+    box-sizing: border-box;    
+}
+
+.search-result .search-result__list tbody {
+    width: 100%;
+    display: table-row-group;
+}
+
+.search-result .search-result__list .search-result__list-item {
+    cursor: pointer;
+    display: table-row;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.search-result .search-result__list .search-result__list-item td {
+    display: table-cell;
+    vertical-align: middle;
+}
+.search-result .search-result__list .search-result__list-item td:nth-child(1) {
+    width: 48px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+.search-result .search-result__list .search-result__list-item a {
+    text-decoration: none;
+    color: #555;
+}
+
+.search-result .search-result__list .search-result__list-item:hover {
+    background-color: #ddd;
+}
+
+.search-result .search-result__list .search-result__list-item:hover a { 
+    color: #000;
+}

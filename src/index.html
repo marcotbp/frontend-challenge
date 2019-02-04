@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Challenge</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/search-users.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/search-users.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+    <label class="message"></label>
+    <section class="search-users">
+        <h1>Search for users on GitHub</h1>
+        <input type="text" class="search-input" placeholder="Search for users">        
+    </section>
+    <section class="search-result">
+        <label class="search-result__count">
+            
+        </label>        
+        <table class="search-result__list">
+            <tbody>
+
+            </tbody>
+        </table>
+        <label class="search-result__count">
+                
+        </label>
+        <input id="page" type="hidden" value="1" />
+        <input id="totalCount" type="hidden" value="0" />
+    </section>
+</body>
+
+</html>
