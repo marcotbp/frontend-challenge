@@ -9,7 +9,7 @@
         "ecmaVersion": 2015
     },
     "globals": {
-        "api_url": true,
+        "apiUrl": true,
         "getUrlVars": true,
         "User":true,
         "require":true
@@ -70,10 +70,7 @@
         "func-call-spacing": "error",
         "func-name-matching": "error",
         "func-names": "error",
-        "func-style": [
-            "error",
-            "declaration"
-        ],
+        "func-style": "off",
         "function-paren-newline": "off",
         "generator-star-spacing": "error",
         "global-require": "error",
@@ -104,10 +101,10 @@
         "max-depth": "error",
         "max-len": "off",
         "max-lines": "error",
-        "max-lines-per-function": "error",
+        "max-lines-per-function": "off",
         "max-nested-callbacks": "error",
         "max-params": "error",
-        "max-statements": "error",
+        "max-statements": "off",
         "max-statements-per-line": "error",
         "multiline-comment-style": "error",
         "multiline-ternary": "off",
@@ -209,7 +206,7 @@
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "no-useless-return": "error",
-        "no-var": "error",
+        "no-var": "warn",
         "no-void": "error",
         "no-warning-comments": "error",
         "no-whitespace-before-property": "error",

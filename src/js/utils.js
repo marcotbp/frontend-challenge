@@ -1,31 +1,27 @@
-const api_url = 'https://api.github.com';
+var Challenge = Challenge || {};
 
-function getUrlVars() {
-    let vars = [];
-    let hash = [];
-    let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+Challenge.Utils = (() => {
+    const gitHubApiUrl = 'https://api.github.com';
 
-    for (let i = 0; i < hashes.length; i++) {
-        hash = hashes[i].split('=');
-        vars.push(hash[0]);
-        vars[hash[0]] = hash[1];
+    let getUrlVars = () => {
+        let vars = [];
+        let hash = [];
+        let hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+
+        for (let i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+
+        return vars;
     }
 
-    return vars;
-}
+    return {
+        properties: {
+            apiUrl: gitHubApiUrl
+        },
 
-class User {
-    constructor(options) {
-        this.avatar_url = options.avatar_url;
-        this.bio = options.bio ? options.bio : 'No bio defined.';
-        this.email = options.email ? options.email : 'No email defined.';
-        this.followers = options.followers;
-        this.following = options.following;
-        this.login = options.login;
-        this.repos = options.repos;
+        getQueryString: getUrlVars
     }
-
-    toJson() {
-        return JSON.stringify(this);
-    }
-}
+})();
