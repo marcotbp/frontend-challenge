@@ -14,3 +14,4 @@ Para testar a aplicação instale o [nodejs](https://nodejs.org/en/download/pack
 npm install
 npm start
 ``` 
+A partir disso a aplicação poderá ser testada em (http://localhost:8000)
