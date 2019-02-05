@@ -1,9 +1,9 @@
 # frontend-challenge #
 
 ### **Considerações** ###
-Essa aplicação foi desenvolvida utilizando apensar o jQuery, conforme requisito.
+Essa aplicação foi desenvolvida utilizando apenas o jQuery, conforme requisito.
 
-Apenas para facilitar o teste, foi incluído no código o nodejs para servir a aplicação.
+Para facilitar o teste, foi incluído no código o nodejs para servir a aplicação.
 
 Os módulos node utilizados são somente para inicializar um servidor e servir arquivos estáticos no mesmo.
 
